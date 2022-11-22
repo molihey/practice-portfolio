@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.header {
+  background-color: seagreen;
+  display: flex;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: seagreen;
+  gap: 50px;
+  padding: 10px;
+}
+.logo {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: auto;
+  height: 48px;
+  width: 90px;
+  background-color: lightgrey;
+}
+.Welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+}
+.bigBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px 0;
+}
+.box {
+  height: 650px;
+  width: 450px;
+  background-color: seagreen;
+  font-size: 35px;
+  position: relative;
+  padding: 30px;
+}
+.text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.box-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  transform: translate(-25%, -25%);
+}
+.red-circle {
+  background-color: lightgray;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 470px;
+  transform: translate(-25%, -25%);
+}
+
+.button2 {
+  background-color: seagreen;
+  height: 8vh;
+  width: 100vw;
+}
+.bigBoxes a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.by {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .Desktop {
+    display: block;
+  }
+  body {
+    background-color: lightgrey;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Tablet {
+    display: block;
+  }
+  body {
+    background-color: lightgrey;
+    margin: auto;
+  }
+  .Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+    background-color: lightgrey;
+    height: 40px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Mobile {
+    display: block;
+  }
+  body {
+    background-color: lightslategray;
+    margin: 0 auto;
+  }
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .links {
+    display: none;
+  }
+}
